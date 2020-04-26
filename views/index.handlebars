@@ -1,9 +1,10 @@
 <h2>List of Burgers</h2>
 {{#each burgers}}
-<p>{{id}} {{burger_name}} {{devoured}}</p>
+<p>{{id}} {{burger_name}} {{devoured}} <button data-burgerID={{id}} class="eat_burger">Eat Burger</button></p>
 {{/each}}
 
 <h2>Add a Burger</h2>
 <form class="create-form">
+  <textarea type="text" name="burger"></textarea>
   <button type="submit">Add Burger</button>
-</form>
+</form> 

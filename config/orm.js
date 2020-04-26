@@ -9,11 +9,13 @@ var orm = {
             cb(result);
         })
     },
-    insertOne : function(table,cols,vals){
+    insertOne : function(table,cols,vals,cb){
         var queryString = "INSERT INTO ?? (??) VALUES (?)";
 
         connection.query(queryString,[table,cols,vals],function(err){
             if(err) throw err;
+            console.log("Success fully added new burger")
+            cb();
         })
     },
     updateOne : function(table, vals, id){
