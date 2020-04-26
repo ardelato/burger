@@ -18,6 +18,13 @@ router.post("/api/burgers", function (req, res) {
   });
 });
 
+router.post("/api/burgers/update", function (req, res) {
+  console.log("UPDATING Burger Record");
+  burger.updateOne("devoured = true", "id = " + req.body.id, function () {
+    res.end();
+  });
+});
+
 // Will need additional API Calls
 
 module.exports = router;
