@@ -1,4 +1,9 @@
-<h2>Add a Cat</h2>
+<h2>List of Burgers</h2>
+{{#each burgers}}
+<p>{{id}} {{burger_name}} {{devoured}}</p>
+{{/each}}
+
+<h2>Add a Burger</h2>
 <form class="create-form">
-  <button type="submit">Add Cat</button>
+  <button type="submit">Add Burger</button>
 </form>
