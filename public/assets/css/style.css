@@ -1,0 +1,57 @@
+body {
+  background-image: url("../images/chalkboard-1620558.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #e8e8e8;
+  font-family: "Fredericka the Great", cursive;
+}
+
+h2 {
+  letter-spacing: 0.5rem;
+}
+
+h3 {
+  letter-spacing: 0.1rem;
+}
+.container {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-list {
+  display: flex;
+  width: 50%;
+}
+.available-burgers {
+  flex: 1;
+}
+
+.eaten-burgers ul {
+  flex: 1;
+  text-decoration-line: line-through;
+}
+
+.eat_burger {
+  border-radius: 12px;
+  margin: 0.2rem;
+  padding: 2px;
+  background-color: #4caf50;
+  border: none;
+}
+
+.burger-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-form textarea {
+  flex: 1;
+  width: 100%;
+}
